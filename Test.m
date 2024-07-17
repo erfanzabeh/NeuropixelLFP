@@ -1,3 +1,18 @@
+%% Add path data
+addpath('/Users/Erfan/Documents/GitHub/NeuropixelLFP/neuropixel-utils-master/')
+addpath('/Users/Erfan/Documents/GitHub/NeuropixelLFP/neuropixel-utils-master/+Neuropixel/')
+addpath('/Users/Erfan/Documents/GitHub/NeuropixelLFP/neuropixel-utils-master/+Neuropixel/+DataProcessFn/')
+addpath('/Users/Erfan/Documents/GitHub/NeuropixelLFP/neuropixel-utils-master/+Neuropixel/+Utils/')
+%%
+datapath = ['/Users/Erfan/Desktop/Monkey NeuroPixel/gandalf_20231223_lfp'];
+
+%%
+channelMapFile = 'neuropixPhase3A_kilosortChanMap.mat';
+
+imec = Neuropixel.ImecDataset([datapath,'/gandalf_20231223_g0_t0.imec1.lf.bin'], 'channelMap', channelMapFile);
+
+
+%%
 % Create an ImecDataset pointing at a specific
 >> channelMapFile = 'neuropixPhase3A_kilosortChanMap.mat';
 >> imec = Neuropixel.ImecDataset('/data/raw_datasets/neuropixel_01.imec.ap.bin', 'channelMap', channelMapFile);
