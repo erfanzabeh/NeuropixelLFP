@@ -11,7 +11,7 @@ datapath = ['/Users/Erfan/Desktop/Monkey NeuroPixel/gandalf_20231223_lfp/'];
 datapath = ['/Users/Erfan/Desktop/Monkey NeuroPixel/gandalf_20231223_lfp/gandalf_20231223_g0/gandalf_20231223_g0_t0.nidq.bin'];
 %%
 channelMapFile = 'neuropixels_NHP_channel_map_linear_v1.mat';
-imec = Neuropixel.ImecDataset('/Users/Erfan/Desktop/Monkey NeuroPixel/gandalf_20231223_lfp/', 'channelMap', channelMapFile);
+imec = Neuropixel.ImecDataset(datapath, 'channelMap', channelMapFile);
 
 
 
